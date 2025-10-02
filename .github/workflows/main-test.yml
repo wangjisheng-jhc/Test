@@ -1,0 +1,12 @@
+name: Test Manual Workflow
+
+on:
+  # 手动触发
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "✅ This is a test workflow running on branch ${{ github.ref }}"
